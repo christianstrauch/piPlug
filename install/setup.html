@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            body { font-family: sans-serif }
+            form { display: block; border: 1px solid #c0c0c0; padding: 20px; margin: 100px;}
+            input { display: block; width: 100%; height: 30px; margin-bottom: 30px }
+        </style>
+    </head>
+    <body>
+        <form method='post' action='/save_config'>
+            <h1>PiPlug Config</h1>
+            <hr />
+            <h2>Wifi</h2>
+            <label for='ssid'>SSID</label>
+            <input type='text' name='ssid' />
+            <label for='pwd'>Password</label>
+            <input type='password' name='pwd' />
+            <label for='country'>Country (e.g., US, DE, FR, CH...)</label>
+            <input type='text' name='country' />
+            <hr />
+            <h2>Name</h2>
+            <label for='device_name'>Name for this device</label>
+            <input type='text' name='device_name' />
+            <hr />
+            <h2>Identification</h2>
+            <label for='id_key'>Identification string for a simple, clear text authentication (leave empty if not needed)</label>
+            <input type='text' name='id_key' />
+            <hr />
+            <h2>Status updates</h2>
+            <label for='u'>Update URL, posts <i>{ 'id': 'xyz', 'plug': 0, 'on': true }</i> (leave empty for no update)</label>
+            <input type='text' name='u'/>
+            <hr />
+            <input type='submit' value='Save'>
+            <hr />
+            <p>To use, find out the device IP address on your router, then post the following body to <u>http://&lt;ip-address&gt;/control</u></p>
+            <pre>
+                {
+                    'id_key': '&lt;the id you defined above, omit if none&gt;',
+                    'plug': &lt;the index of the plug, 0 for all&gt;,
+                    'on': &lt;true for on, false, for off&gt;
+                }
+            </pre>
+            <p>To check the current power status, GET <u>http://&lt;ip-address&gt;/status?plug=&lt;the index of the plug&gt;</u></p>
+            
+        </form>
+    </body>
+</html>
