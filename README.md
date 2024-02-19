@@ -35,7 +35,7 @@ I want an inexpensive device that survives getting unplugged without proper shut
 * After a few seconds, its LED will blink fast - you should see a new wifi SSID on your computer starting with `piPlug-`. Connect to it - the password is `12345678`.
 * Set your computer's IP address on this network to `192.168.0.2`, subnet mask `255.255.255.0`. You don't need a default gateway or DNS. 
 * Access [http://192.168.0.1](http://192.168.0.1) in your web browser.
-* This should be displayed:![[Pasted image 20240219160645.png]]
+* This should be displayed: ![Initial configuration web page](/initial_config_screenshot.png)
 * Enter your own wifi's information (Pi Picos only support 2.4GHz wifi, so make sure you use that)
 	* `SSID`: your wifi's name
 	* `Password`: your wifi's password
