@@ -25,7 +25,8 @@ I want an inexpensive device that survives getting unplugged without proper shut
 * Deploy the previously downloaded contents of the install folder of this repository to the Raspberry Pi Pico W
 * Unplug the Raspberry Pi Pico from your computer
 * Install the hardware:
-(TBD)
+
+![Hardware](/hardware.png)
 ### Use
 ---
 >*Note:* I don't think it's necessary to run a DHCP server just for the initial configuration. There is a pure python based implementation somewhere that will probably work but the overhead (and space needed) is quite significant. If you think this initial setup is too much work, just create a `user_config.py` manually (see below) and copy it onto the pi. In that case, you can skip all the initial configuration. The device should boot straight into the user configuration (as a wifi client using DHCP.) 
