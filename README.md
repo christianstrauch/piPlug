@@ -18,7 +18,7 @@ I want an inexpensive device that survives getting unplugged without proper shut
 * MicroPython firmware
 ### Installation
 ---
-* Checkout or download the contents of the install folder of this repository
+* Checkout or download the contents of the install folder of [this repository](https://github.com/christianstrauch/piPlug)
 * Download the [MicroPython firmware](https://micropython.org/resources/firmware/RPI_PICO_W-20240105-v1.22.1.uf2) (or find a different version and download it [here](https://micropython.org/download/RPI_PICO_W/))
 * Unplug the Pi Pico W, hold down the bootsel button while plugging it into your computer
 * Wait for the USB mass storage device to appear and copy the MicroPython firmware onto it. It will automatically reset.
